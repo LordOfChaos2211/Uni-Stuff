@@ -3,7 +3,6 @@
 #include <string>
 #include <cmath>
 
-using string = std::string;
 
 int main(){
     double a , b, c, root1, root2;
