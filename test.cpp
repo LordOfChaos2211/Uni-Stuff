@@ -3,6 +3,15 @@
 #include <string>
 #include <cmath>
 
+int findrem(int x){
+    int maxpow = 0;
+    for(int i = 2; i < x ; i++){
+        if((int) x % (int) pow(i,2) == 0){
+            maxpow = i;
+        } 
+    }
+    return maxpow;
+}
 
 int main(){
     double a , b, c, root1, root2;
