@@ -13,6 +13,30 @@ int findrem(int x){
     return maxpow;
 }
 
+int getfactors(int x){
+    int x;
+    std::cin >> x;
+    int counter  =  0;
+    for(int i = 1; i <= x / 2; i++){
+        if(x % i == 0){
+            counter++;
+        }
+    }
+    int factors[counter];
+    counter = 0;
+
+    for(int i = 1; i <= x / 2; i++){
+        if(x % i == 0){
+            factors[counter] = i;
+            counter++;
+        }
+    }
+
+    for(int i : factors){
+        std::cout << i << std::endl;
+    }
+}
+
 int main(){
     double a , b, c, root1, root2;
     bool rootfound = false;
